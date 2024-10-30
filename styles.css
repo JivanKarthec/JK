@@ -35,6 +35,18 @@ body {
     background-color: rgba(255, 255, 255, 0.9); /* White background with transparency */
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    opacity: 0; /* Start hidden for fade-in effect */
+    animation: fadeIn 1s forwards; /* Fade-in animation */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 /* Header Styling */
@@ -43,6 +55,20 @@ h1 {
     margin-bottom: 10px;
     color: #2c3e50;
     text-align: center;
+    animation: slideIn 0.5s ease forwards; /* Slide-in animation for header */
+    transform: translateY(-20px);
+}
+
+/* Slide-in animation */
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 h2 {
@@ -51,6 +77,20 @@ h2 {
     color: #2980b9;
     border-bottom: 2px solid #2980b9;
     padding-bottom: 5px;
+    animation: fadeInUp 0.5s ease forwards; /* Fade-in up animation for section headers */
+    transform: translateY(20px);
+}
+
+/* Fade-in up animation */
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 h3 {
@@ -69,10 +109,27 @@ a {
     color: #2980b9;
     text-decoration: none;
     transition: color 0.3s;
+    position: relative;
 }
 
 a:hover {
-    text-decoration: underline;
+    color: #1a1a1a; /* Change color on hover */
+}
+
+a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background: #2980b9;
+    transition: width 0.3s;
+    width: 0;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+}
+
+a:hover::after {
+    width: 100%;
 }
 
 /* Table Styling */
@@ -95,6 +152,7 @@ th {
 
 tbody tr:hover {
     background-color: #f2f2f2;
+    transition: background-color 0.3s ease; /* Smooth transition for row hover */
 }
 
 /* Image Badge Styling */
@@ -109,4 +167,18 @@ h3 {
 }
 
 /* Responsive Design */
-@media (max-width: 600
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    h3 {
+        font-size: 1.2em;
+    }
+    table, img {
+        width: 100%;
+        display: block;
+    }
+}
