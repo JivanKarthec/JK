@@ -7,8 +7,8 @@
 
 /* Body Styling */
 body {
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #1a1a1a, #0a2239);
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #0a2239, #1a1a1a);
     color: #ffffff;
     line-height: 1.6;
 }
@@ -16,12 +16,12 @@ body {
 /* Header Styling */
 header {
     text-align: center;
-    padding: 50px 0;
-    background: rgba(0, 0, 0, 0.7);
+    padding: 50px 20px;
+    background: rgba(0, 0, 0, 0.8);
 }
 
 header h1 {
-    font-size: 2.5em;
+    font-size: 2.8em;
     margin-bottom: 10px;
 }
 
@@ -31,19 +31,25 @@ header h1 span {
 
 header p {
     margin: 20px 0;
+    font-size: 1.2em;
 }
 
-/* Section Styling */
+/* Main Content Styling */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
 section {
     padding: 20px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 8px;
-    margin: 20px auto;
-    max-width: 800px;
+    margin: 20px 0;
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 2.2em;
     margin-bottom: 10px;
     color: #0072b1; /* Highlight color */
 }
@@ -53,28 +59,33 @@ h3 {
     color: #009688; /* Subsection color */
 }
 
+/* Table Styling */
 table {
     width: 100%;
     border-collapse: collapse;
-    margin: 20px 0;
+    margin: 15px 0;
 }
 
 th, td {
-    border: 1px solid #ddd;
     padding: 12px;
+    border: 1px solid #444;
     text-align: left;
 }
 
 th {
-    background-color: #0072b1;
-    color: white;
+    background: rgba(0, 0, 0, 0.5);
 }
 
-tbody tr:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+/* List Styling */
+ul {
+    list-style-type: none;
 }
 
-/* Links Styling */
+li {
+    padding: 5px 0;
+}
+
+/* Link Styling */
 a {
     color: #0072b1;
     text-decoration: none;
@@ -88,5 +99,25 @@ a:hover {
 footer {
     text-align: center;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.8);
+    position: relative;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
 }
