@@ -3,26 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Ensure this path is correct -->
+    <title>Jivan Karthec B S - Cyber Security Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Hello, I'm <span>JIVAN KARTHEC B S</span></h1>
-        <p>Cyber Security Student</p>
-        <p>
-            <a href="https://linkedin.com/in/jvan-karthea" target="_blank">
-                <img src="https://img.shields.io/badge/-LinkedIn-0072b1?&style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-            </a>
-            <a href="https://github.com/JivanKarthec" target="_blank">
-                <img src="https://img.shields.io/badge/-GitHub-000000?&style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-            </a>
-        </p>
-        <p>
-            <strong>Contact:</strong> +91 9384230285 | <strong>Email:</strong> <a href="mailto:jivankarthil27@gmail.com">jivankarthil27@gmail.com</a>
-        </p>
-        <p>Currently in the third year of pursuing a CSE-Cyber Security program at Saveetha Engineering College, specializing in network security, threat analysis, and ethical hacking. Demonstrates strong analytical skills, attention to detail, and a commitment to continuous learning in the rapidly evolving field of cybersecurity.</p>
+        <nav>
+            <div class="logo">JIVAN KARTHEC</div>
+            <ul class="nav-links">
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Hello, I'm <span>JIVAN KARTHEC B S</span></h1>
+            <p>Cyber Security Student</p>
+            <p>Currently in the third year of pursuing a CSE-Cyber Security program at Saveetha Engineering College, specializing in network security, threat analysis, and ethical hacking.</p>
+            <div class="contact-info">
+                <p>Contact: +91 9384230285 | Email: <a href="mailto:jivankarthil27@gmail.com">jivankarthil27@gmail.com</a></p>
+                <p>
+                    <a href="https://linkedin.com/in/jvan-karthea" target="_blank">
+                        <img src="https://img.shields.io/badge/-LinkedIn-0072b1?&style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+                    </a>
+                    <a href="https://github.com/JivanKarthec" target="_blank">
+                        <img src="https://img.shields.io/badge/-GitHub-000000?&style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+                    </a>
+                </p>
+            </div>
+        </div>
     </header>
 
     <main>
@@ -118,19 +130,12 @@
             <h2>Projects</h2>
             <h3>SOC Automation</h3>
             <p>Deployed a Windows 10 agent to send security events to Wazuh for real-time alerting and automated responses, integrating Shuffle for orchestrating responsive actions and case management.</p>
-            <p>Enhanced SOC efficiency by using Shuffle for OSINT enrichment of IOCs, sending details to The Hive for case management, and automating analyst notifications and response actions via email.</p>
-            
             <h3>Active Directory</h3>
             <p>Set up a security lab with two servers (Splunk and Active Directory) and two computers (attacker and target machines), connected through a switch to the internet for real-time network analysis.</p>
-            <p>Implemented data flow from the Active Directory server and target machine to the Splunk server using Universal Forwarders, leveraging Sysmon for telemetry on the AD server and Atomic Red Team for generating test data on the target machine.</p>
-
             <h3>SOAR Endpoint Detection Response</h3>
             <p>Implemented a SOAR workflow using LimaCharlie for detecting malicious processes and Tines for automating threat response, including Slack and email alerts for user decision on machine isolation.</p>
-            <p>Automated endpoint isolation via API integration, enhancing incident response by enabling real-time isolation of compromised machines based on user input.</p>
-
             <h3>Malware Analysis Lab</h3>
             <p>Built a custom malware analysis lab using Windows 10 with Splunk and Sysmon to monitor and analyze suspicious file behavior within a segmented LAN environment.</p>
-            <p>Integrated Kali Linux to create and test malware samples, enabling comprehensive analysis and detection techniques in a controlled lab setting.</p>
         </section>
 
         <section id="internships">
@@ -142,7 +147,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer id="contact">
         <p>&copy; 2024 Jivan Karthec B S. All rights reserved.</p>
     </footer>
 </body>
