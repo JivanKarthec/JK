@@ -48,6 +48,11 @@ h2 {
     color: #0072b1; /* Highlight color */
 }
 
+h3 {
+    margin-top: 15px;
+    color: #009688; /* Subsection color */
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -71,7 +76,7 @@ tbody tr:hover {
 
 /* Links Styling */
 a {
-    color: #0072b1; /* Link color */
+    color: #0072b1;
     text-decoration: none;
 }
 
@@ -79,28 +84,9 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Tools and Certifications */
-h3 {
-    margin: 15px 0;
-}
-
-div img {
-    margin: 5px;
-}
-
-/* Projects Styling */
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    margin: 5px 0;
-}
-
 /* Footer Styling */
 footer {
     text-align: center;
-    padding: 20px 0;
+    padding: 20px;
     background: rgba(0, 0, 0, 0.7);
 }
