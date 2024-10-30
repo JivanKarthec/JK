@@ -1,0 +1,192 @@
+/* General styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #eaeaea; /* Light text color for contrast */
+    background-color: #1a1a1a; /* Dark background for modern look */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header styles */
+header {
+    background: linear-gradient(to right, #1c1c1c, #4a90e2); /* Dark gradient */
+    color: white;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+}
+
+header p {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+/* Navigation styles */
+nav {
+    text-align: center;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffdd57; /* Highlight color on hover */
+}
+
+/* Section styles */
+section {
+    padding: 20px 0; /* Adjust padding for better spacing */
+    margin-bottom: 20px; /* Reduce space between sections */
+    background: #2b2b2b; /* Darker background for sections */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Darker shadow */
+}
+
+h2 {
+    text-align: center;
+    margin: 10px 0 20px; /* Adjusting the bottom margin */
+    color: #ffdd57; /* Highlight color for section titles */
+}
+
+/* Modern styles for education and project subheadings */
+.education-card h3, 
+.project h3 {
+    background-color: #2b2b2b; /* Darker background for a modern look */
+    color: #ffdd57; /* Bright color for contrast */
+    padding: 10px; /* Increased padding for better spacing */
+    border-radius: 5px; /* Rounded corners */
+    margin: 0; /* Remove default margin */
+    text-align: center; /* Center the text */
+    font-size: 1.6em; /* Slightly larger font size */
+    font-weight: bold; /* Bold text for emphasis */
+    letter-spacing: 1px; /* Increased letter spacing for a modern feel */
+    text-transform: uppercase; /* Uppercase text for modernity */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+/* Skills styles */
+.skill-set {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skill {
+    background: #4a4a4a; /* Darker skill card background */
+    border-radius: 8px;
+    margin: 10px;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s; /* Scale effect and shadow on hover */
+}
+
+.skill:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+    box-shadow: 0 0 20px rgba(255, 221, 87, 0.8); /* Glowing effect */
+}
+
+.skill h3 {
+    margin: 10px 0 5px;
+}
+
+.skill i {
+    font-size: 2em;
+    color: #007aff;
+}
+
+/* Education card styles */
+.education-card {
+    margin: 20px 0;
+    padding: 15px;
+    background: #4a4a4a; /* Darker background */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Shadow effect without pop */
+}
+
+.education-card:hover {
+    box-shadow: 0 0 20px rgba(255, 221, 87, 0.8); /* Glowing effect on hover */
+}
+
+/* Projects styles */
+.project {
+    margin: 20px 0;
+    padding: 15px;
+    background: #4a4a4a; /* Darker background */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Shadow effect without pop */
+}
+
+.project:hover {
+    box-shadow: 0 0 20px rgba(255, 221, 87, 0.8); /* Glowing effect on hover */
+}
+
+/* Contact section styles */
+footer#contact {
+    background: linear-gradient(to right, #1c1c1c, #4a90e2); /* Gradient to match header */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.contact-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px;
+    width: 200px; /* Ensure cards are of uniform width */
+}
+
+.contact-card h3 {
+    margin-bottom: 10px;
+}
+
+.contact-card p {
+    margin: 5px 0;
+}
+
+.contact-card a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    background: #1c1c1c; /* Dark footer background */
+    color: white;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
+}
