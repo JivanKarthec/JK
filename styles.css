@@ -11,24 +11,23 @@ body {
     line-height: 1.6;
     padding: 20px;
     animation: backgroundAnimation 15s ease infinite; /* Background Animation */
-    color: #f0f4f8; /* Light text color for contrast */
 }
 
 /* Animated Background */
 @keyframes backgroundAnimation {
     0% {
         background-color: #1e3c72;
-        background-image: radial-gradient(circle, rgba(255,255,255,0.05) 20%, transparent 20%);
+        background-image: radial-gradient(circle, rgba(255, 255, 255, 0.1) 20%, transparent 20%);
         background-size: 20px 20px;
     }
     50% {
         background-color: #2a5298;
-        background-image: radial-gradient(circle, rgba(255,255,255,0.1) 20%, transparent 20%);
+        background-image: radial-gradient(circle, rgba(255, 255, 255, 0.1) 20%, transparent 20%);
         background-size: 30px 30px;
     }
     100% {
         background-color: #1e3c72;
-        background-image: radial-gradient(circle, rgba(255,255,255,0.05) 20%, transparent 20%);
+        background-image: radial-gradient(circle, rgba(255, 255, 255, 0.1) 20%, transparent 20%);
         background-size: 20px 20px;
     }
 }
@@ -78,4 +77,39 @@ h1 {
 }
 
 h2 {
-    font-size: 2em
+    font-size: 2em;
+    margin: 20px 0 10px;
+    color: #2c3e50;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #0072b1; /* Header background */
+    color: white;
+}
+
+/* Additional styles for links */
+a {
+    color: #0072b1; /* Link color */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Styling for images */
+img {
+    margin: 5px;
+    width: 120px; /* Set a fixed width for badges */
+}
