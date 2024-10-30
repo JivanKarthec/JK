@@ -8,8 +8,8 @@
 /* Body Styling */
 body {
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-    color: #fff;
+    background: linear-gradient(135deg, #0a2239, #1a5a90);
+    color: #ffffff;
     line-height: 1.6;
 }
 
@@ -23,12 +23,14 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 800px;
+    max-width: 1000px;
     margin: auto;
+    padding: 0 20px;
 }
 
 nav h1 {
-    font-size: 1.8em;
+    font-size: 2em;
+    color: #ffdd57; /* Highlight color */
 }
 
 nav ul {
@@ -41,35 +43,37 @@ nav ul li {
 }
 
 nav a {
-    color: #fff;
+    color: #ffdd57;
     text-decoration: none;
-    transition: color 0.3s;
+    transition: color 0.3s, transform 0.3s;
 }
 
 nav a:hover {
-    color: #ffdd57;
+    color: #fff;
+    transform: scale(1.1);
 }
 
 /* Container for sections */
 .container {
-    max-width: 800px;
+    max-width: 1000px;
     margin: auto;
     padding: 20px;
 }
 
 /* Section Styling */
 section {
-    padding: 20px 0;
+    padding: 20px;
     background: rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
+    border-radius: 10px;
     margin: 20px 0;
 }
 
 /* Heading Styles */
 h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
+    font-size: 2.5em;
+    margin-bottom: 15px;
     color: #ffdd57; /* Highlight color */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
 /* Table Styling */
@@ -81,13 +85,17 @@ table {
 
 th, td {
     border: 1px solid #ddd;
-    padding: 10px;
+    padding: 12px;
     text-align: left;
 }
 
 th {
     background-color: #0072b1;
     color: white;
+}
+
+tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 /* Additional styles for links */
