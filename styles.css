@@ -11,16 +11,7 @@ body {
     line-height: 1.6;
     padding: 20px;
     background: linear-gradient(135deg, #1a2c60, #4f80e1); /* Gradient Background */
-    background-size: 400% 400%; /* Smooth animation */
-    animation: gradient 15s ease infinite; /* Animation for background */
     color: #f0f4f8; /* Light text color for contrast */
-}
-
-/* Keyframes for background animation */
-@keyframes gradient {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
 }
 
 /* Container for layout */
