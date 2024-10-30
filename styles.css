@@ -24,6 +24,7 @@ header {
 header h1 {
     margin: 0;
     text-align: center;
+    text-shadow: 0 0 20px #4a90e2; /* Neon glow effect */
 }
 
 header p {
@@ -54,6 +55,7 @@ nav a {
 
 nav a:hover {
     color: #ffdd57; /* Highlight color on hover */
+    text-shadow: 0 0 10px #ffdd57; /* Neon glow on hover */
 }
 
 /* Section styles */
@@ -62,13 +64,14 @@ section {
     margin-bottom: 20px; /* Reduce space between sections */
     background: #2b2b2b; /* Darker background for sections */
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Darker shadow */
+    box-shadow: 0 0 20px rgba(74, 144, 226, 0.5); /* Neon shadow */
 }
 
 h2 {
     text-align: center;
     margin: 10px 0 20px; /* Adjusting the bottom margin */
     color: #ffdd57; /* Highlight color for section titles */
+    text-shadow: 0 0 10px #ffdd57; /* Neon glow effect */
 }
 
 /* Modern styles for education and project subheadings */
@@ -84,7 +87,7 @@ h2 {
     font-weight: bold; /* Bold text for emphasis */
     letter-spacing: 1px; /* Increased letter spacing for a modern feel */
     text-transform: uppercase; /* Uppercase text for modernity */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    box-shadow: 0 0 10px #ffdd57, 0 0 20px #ffdd57; /* Neon shadow */
 }
 
 /* Skills styles */
@@ -101,16 +104,16 @@ h2 {
     padding: 15px;
     width: 200px;
     text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s; /* Scale effect and shadow on hover */
+    transition: transform 0.3s; /* Scale effect on hover */
 }
 
 .skill:hover {
     transform: scale(1.05); /* Scale effect on hover */
-    box-shadow: 0 0 20px rgba(255, 221, 87, 0.8); /* Glowing effect */
 }
 
 .skill h3 {
     margin: 10px 0 5px;
+    text-shadow: 0 0 10px #007aff; /* Neon glow for skill titles */
 }
 
 .skill i {
@@ -124,11 +127,6 @@ h2 {
     padding: 15px;
     background: #4a4a4a; /* Darker background */
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Shadow effect without pop */
-}
-
-.education-card:hover {
-    box-shadow: 0 0 20px rgba(255, 221, 87, 0.8); /* Glowing effect on hover */
 }
 
 /* Projects styles */
@@ -137,11 +135,6 @@ h2 {
     padding: 15px;
     background: #4a4a4a; /* Darker background */
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Shadow effect without pop */
-}
-
-.project:hover {
-    box-shadow: 0 0 20px rgba(255, 221, 87, 0.8); /* Glowing effect on hover */
 }
 
 /* Contact section styles */
@@ -168,6 +161,7 @@ footer#contact {
 
 .contact-card h3 {
     margin-bottom: 10px;
+    text-shadow: 0 0 10px #ffdd57; /* Neon glow for contact titles */
 }
 
 .contact-card p {
