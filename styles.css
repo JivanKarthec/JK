@@ -10,8 +10,21 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     padding: 20px;
-    background: linear-gradient(135deg, #1a2c60, #4f80e1); /* Gradient Background */
+    animation: backgroundAnimation 15s ease infinite; /* Background Animation */
     color: #f0f4f8; /* Light text color for contrast */
+}
+
+/* Background Animation */
+@keyframes backgroundAnimation {
+    0% {
+        background: linear-gradient(135deg, #1a2c60, #4f80e1);
+    }
+    50% {
+        background: linear-gradient(135deg, #4f80e1, #1a2c60);
+    }
+    100% {
+        background: linear-gradient(135deg, #1a2c60, #4f80e1);
+    }
 }
 
 /* Container for layout */
@@ -96,18 +109,4 @@ h3 {
 }
 
 /* Responsive Design */
-@media (max-width: 600px) {
-    h1 {
-        font-size: 2em;
-    }
-    h2 {
-        font-size: 1.5em;
-    }
-    h3 {
-        font-size: 1.2em;
-    }
-    table, img {
-        width: 100%;
-        display: block;
-    }
-}
+@media (max-width: 600
