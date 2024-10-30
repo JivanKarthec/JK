@@ -7,73 +7,59 @@
 
 /* Body Styling */
 body {
-    font-family: 'Roboto', sans-serif;
-    background: linear-gradient(135deg, #0a2239, #1a5a90);
-    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
+    padding: 20px;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+/* Container for layout */
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Header Styling */
-header {
-    background: rgba(0, 0, 0, 0.7);
-    padding: 20px 0;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1000px;
-    margin: auto;
-    padding: 0 20px;
-}
-
-nav h1 {
-    font-size: 2em;
-    color: #ffdd57; /* Highlight color */
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-}
-
-nav ul li {
-    margin-left: 20px;
-}
-
-nav a {
-    color: #ffdd57;
-    text-decoration: none;
-    transition: color 0.3s, transform 0.3s;
-}
-
-nav a:hover {
-    color: #fff;
-    transform: scale(1.1);
-}
-
-/* Container for sections */
-.container {
-    max-width: 1000px;
-    margin: auto;
-    padding: 20px;
-}
-
-/* Section Styling */
-section {
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    margin: 20px 0;
-}
-
-/* Heading Styles */
-h2 {
+h1 {
     font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #2c3e50;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    margin: 20px 0 10px;
+    color: #2980b9;
+    border-bottom: 2px solid #2980b9;
+    padding-bottom: 5px;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin: 15px 0;
+    color: #27ae60;
+}
+
+/* Paragraph Styling */
+p {
     margin-bottom: 15px;
-    color: #ffdd57; /* Highlight color */
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Link Styling */
+a {
+    color: #2980b9;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 /* Table Styling */
@@ -84,37 +70,44 @@ table {
 }
 
 th, td {
-    border: 1px solid #ddd;
     padding: 12px;
     text-align: left;
+    border-bottom: 1px solid #ddd;
 }
 
 th {
-    background-color: #0072b1;
+    background-color: #2980b9;
     color: white;
 }
 
 tbody tr:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: #f2f2f2;
 }
 
-/* Additional styles for links */
-a {
-    color: #ffdd57;
+/* Image Badge Styling */
+img {
+    margin: 5px;
 }
 
-a:hover {
-    text-decoration: underline;
-}
-
-/* Footer Styling */
-footer {
-    text-align: center;
-    padding: 20px 0;
-    background: rgba(0, 0, 0, 0.7);
-    margin-top: 20px;
-}
-
-footer h2 {
+/* Tools Section Styling */
+h3 {
+    margin-top: 30px;
     margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    h3 {
+        font-size: 1.2em;
+    }
+    table, img {
+        width: 100%;
+        display: block;
+    }
 }
