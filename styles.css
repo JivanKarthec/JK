@@ -50,12 +50,12 @@ nav ul li {
 nav a {
     color: white;
     text-decoration: none;
-    transition: color 0.3s;
+    transition: color 0.3s, text-shadow 0.3s; /* Smooth transition for text shadow */
 }
 
 nav a:hover {
-    color: #ffdd57; /* Highlight color on hover */
-    text-shadow: 0 0 10px #ffdd57; /* Neon glow on hover */
+    color: #4a90e2; /* Change text color to blue on hover */
+    text-shadow: 0 0 20px #4a90e2, 0 0 30px #4a90e2; /* Blue glow effect on hover */
 }
 
 /* Section styles */
@@ -65,6 +65,12 @@ section {
     background: #2b2b2b; /* Darker background for sections */
     border-radius: 8px;
     box-shadow: 0 0 20px rgba(74, 144, 226, 0.5); /* Neon shadow */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for glow-up effect */
+}
+
+section:hover {
+    transform: scale(1.02); /* Slightly scale up on hover */
+    box-shadow: 0 0 30px rgba(74, 144, 226, 1); /* Enhanced glow on hover */
 }
 
 h2 {
@@ -88,6 +94,12 @@ h2 {
     letter-spacing: 1px; /* Increased letter spacing for a modern feel */
     text-transform: uppercase; /* Uppercase text for modernity */
     box-shadow: 0 0 10px #ffdd57, 0 0 20px #ffdd57; /* Neon shadow */
+    transition: box-shadow 0.3s; /* Smooth transition for glow-up effect */
+}
+
+.education-card h3:hover, 
+.project h3:hover {
+    box-shadow: 0 0 30px #4a90e2, 0 0 40px #4a90e2; /* Blue glow on hover */
 }
 
 /* Skills styles */
@@ -104,11 +116,12 @@ h2 {
     padding: 15px;
     width: 200px;
     text-align: center;
-    transition: transform 0.3s; /* Scale effect on hover */
+    transition: transform 0.3s, box-shadow 0.3s; /* Scale effect and shadow transition on hover */
 }
 
 .skill:hover {
     transform: scale(1.05); /* Scale effect on hover */
+    box-shadow: 0 0 30px #4a90e2; /* Blue glow on hover */
 }
 
 .skill h3 {
@@ -126,7 +139,6 @@ h2 {
     margin: 20px 0;
     padding: 15px;
     background: #4a4a4a; /* Darker background */
-    border-radius: 8px;
 }
 
 /* Projects styles */
